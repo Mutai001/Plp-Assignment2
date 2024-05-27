@@ -1,0 +1,111 @@
+<!doctype HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple webpage with linked images.">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta property="og:title" content="Image Links Lab">
+    <title>image_links.html</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav {
+            margin: 20px;
+        }
+        
+        nav a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #333;
+        }
+        
+        section {
+            padding: 20px;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+        }
+        
+        .menu li {
+            margin: 10px 0;
+        }
+        
+        .menu li a {
+            list-style: none;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Image Links Lab</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to the Image Links Lab! Here you can explore images related to different topics.</p>
+        <a href="https://example.com/technology" target="_blank">
+            <img src="./assets/images/Tech1.jpg" width="500px" height="300px " alt="Technology Image">
+        </a>
+    </section>
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <a href="https://example.com/nature1" target="_blank">
+            <img src="./assets/images/Nature1 (1).jpg" width="100px" height="70px" alt="Nature Image 1">
+        </a>
+        <a href="https://example.com/nature2" target="_blank">
+            <img src="./assets/images/Nature1 (2).jpg" width="100px" height="70px" alt="Nature Image 2">
+        </a>
+        <a href="https://example.com/nature3" target="_blank">
+            <img src="./assets/images/Nature1 (3).jpg" width="100px" height="70px" alt="Nature Image 3">
+        </a>
+    </section>
+    <section id="menu" class="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="https://example.com/food1" target="_blank">Pizza</a>
+                <img src="./assets/images/Food (1).jpg" width="300px" height="200px" alt=""> </li>
+            <li><a href="https://example.com/food2" target="_blank">Burger</a>
+                <img src="./assets/images/Food (2).jpg" width="300px" height="200px" alt=""> </li>
+            <li><a href="https://example.com/food3" target="_blank">Salad</a>
+                <img src="./assets/images/Food (3).jpg" width="300px" height="200px" alt=""></li>
+        </ul>
+    </section>
+</body>
+
+</html>
